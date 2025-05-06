@@ -1,0 +1,7 @@
+1] The data comprises the currency exchange rates spanning from 2010-01-01 to 2011-01-01 across all the working days.​
+2] This data set consists of data items of 24 hours, measured each minute.​ 
+3] There are 5 columns which are Time, Open, High, Low, Close and Volume.​ 
+4] For this project, the Date, Time and Close columns is used to detect anomalies with respect to the closing price​
+5] Date and Time column are combined into a Date-Time format column
+
+Link: https://drive.google.com/file/d/13hljV_JTWrwfJZKxhdI8Acx5RtDkX8Rl/view?usp=sharing
