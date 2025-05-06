@@ -1,6 +1,4 @@
-# CSE573-Anomaly_Detection
-
-Problem: 
+Problem:
 Identification of items, events or observations which do not conform to an expected pattern or other items in a (time-series) dataset.
 For this project, the objective is to detect anomalies within a currency exchange data that varies with respect to time.
 
