@@ -1,12 +1,98 @@
-Problem:
-Identification of items, events or observations which do not conform to an expected pattern or other items in a (time-series) dataset.
-For this project, the objective is to detect anomalies within a currency exchange data that varies with respect to time.
+Currency Exchange Anomaly Detection
 
-Data Sets:
-The currency exchange rate data of the European (€) and United States ($) currencies will be used for detecting the anomalies. This data comprises the currency exchange rates spanning from 2021-01-28 to 2004-07-29 across all the working days. This data set consists of data items of 24 hours, measured each minute. There are 6 million rows in the data and 5 columns which are Time, Open, High, Low, Close and Volume. For this project, the Date, Time and Close columns will be used to detect anomalies with the respect to the closing price. The objective is to use a subset of the 6 million rows to train the model.
+This repository provides solutions for anomaly detection in currency exchange rate data using advanced time-series modeling techniques. The primary goal is identifying anomalous observations within historical currency exchange rates between the Euro (€) and US Dollar ($).
 
-Algorithms Implemented:
-LSTM with Autoencoder
-Arima Model
-GRU with Autoencoder
-Variational Recurrent Autoencoder
+Problem Overview
+
+Anomaly detection involves identifying items, events, or observations that deviate significantly from expected patterns in a dataset. This project specifically addresses the detection of anomalies within currency exchange data that varies over time.
+
+Dataset
+
+The dataset used in this project comprises currency exchange rates between the Euro (€) and United States Dollar ($) recorded from 2004-07-29 to 2021-01-28. The dataset includes the following characteristics:
+
+Frequency: Recorded each minute for 24 hours per day.
+
+Total Data Size: Approximately 6 million rows.
+
+Columns Included:
+
+Time: Time stamp of each record
+
+Open: Opening exchange rate
+
+High: Highest exchange rate in the time interval
+
+Low: Lowest exchange rate in the time interval
+
+Close: Closing exchange rate
+
+Volume: Trading volume
+
+Used for Detection:
+
+Date
+
+Time
+
+Close
+
+The detection model is trained using a subset of the entire dataset, emphasizing patterns in the closing prices.
+
+Algorithms Implemented
+
+This repository includes implementations of several advanced anomaly detection models:
+
+Long Short-Term Memory (LSTM) Autoencoder
+
+ARIMA (AutoRegressive Integrated Moving Average)
+
+Gated Recurrent Unit (GRU) Autoencoder
+
+Variational Recurrent Autoencoder (VRAE)
+
+Each model leverages the temporal dependencies in the currency exchange rate data to identify anomalies effectively.
+
+Repository Structure
+
+.
+├── data/
+│   └── exchange_rate_data.csv
+├── notebooks/
+│   ├── LSTM_Autoencoder.ipynb
+│   ├── ARIMA_Model.ipynb
+│   ├── GRU_Autoencoder.ipynb
+│   └── Variational_Recurrent_Autoencoder.ipynb
+├── models/
+│   └── (saved models)
+├── results/
+│   └── (output visualizations & results)
+├── requirements.txt
+└── README.md
+
+Getting Started
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/yourusername/currency-anomaly-detection.git
+cd currency-anomaly-detection
+
+Install the required libraries:
+
+pip install -r requirements.txt
+
+Usage
+
+Navigate to the notebooks directory and explore each Jupyter Notebook for detailed instructions and step-by-step implementation guides.
+
+cd notebooks
+jupyter notebook
+
+Contributions
+
+Contributions to enhance the project are welcome. Feel free to submit issues or pull requests for improvements or additional features.
+
+License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
